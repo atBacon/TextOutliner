@@ -1,7 +1,7 @@
 #outline font maker
 
 #Character Sets
-lower = "𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫"
+lower = "𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫"
 upper = "𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ"
 
 #turns a character to an ASCII code
@@ -24,10 +24,10 @@ def giveChar(letter):
     if code >= 65 and code <= 90: #upper
         code = code - 65
         return upper[code]
-    elif code >= 97 and code <= 122:
+    elif code >= 97 and code <= 122: #lower
         code = code - 97
         return lower[code]
-    else:
+    else: #all other characters don't have outline versions
         return letter
         
 
